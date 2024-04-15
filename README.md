@@ -41,3 +41,10 @@ This repository contains various shell scripting projects that automate tasks or
 - `-l LENGTH`: Specify the password length.
 - `-s`: Append a special character to the password.
 - `-v`: Increase verbosity.
+
+### 6. show-attackers.sh
+
+**Description:** Analyzes a log file to identify potential attackers by counting failed login attempts. It extracts IP addresses from the log file, counts their occurrences, and determines their geographic location using `geoiplookup`. If an IP address has more than 10 failed login attempts, it displays the count, IP address, and location.
+
+**Usage:** `./show-attackers.sh <LOG_FILE>`
+
