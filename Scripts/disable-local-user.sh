@@ -78,7 +78,7 @@ do
          fi
       else
            echo "${HOME_DIR} of ${USER_NAME} does not exist or is not a directory." >&2
-           continue
+           exit 1
       fi
    fi
 
