@@ -48,3 +48,14 @@ This repository contains various shell scripting projects that automate tasks or
 
 **Usage:** `./show-attackers.sh <LOG_FILE>`
 
+### 7. run-everywhere.sh
+
+**Description:** Executes a command on every server specified in a list of servers. The script provides options for dry run mode, executing commands with sudo, and enabling verbose mode.
+
+**Usage:** `./run-everywhere.sh [-nsv] [-f FILE] COMMAND`
+
+**Options:**  
+- `-f FILE`: Use FILE for the list of servers. Default: /vagrant/servers.
+- `-n`: Dry run mode. Display the COMMAND that would have been executed and exit.
+- `-s`: Execute the COMMAND using sudo on the remote server.
+- `-v`: Verbose mode. Displays the server name before executing COMMAND.
