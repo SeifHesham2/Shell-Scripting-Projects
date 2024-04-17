@@ -17,6 +17,11 @@ SCHEDULE="${1}"
 COMMAND="${2}"
 NUMBER_OF_ARG=${#}
 PATH_OF_THE_SCRIPT=$(echo "${COMMAND}" | awk '{print $2}')
+# Check if the user use do to run the script
+if [[ "${PATH_OF_THE_SCRIPT}" -eq 'sudo' ]]
+then
+  PATH_OF_THE_SCRIPT=$(echo "${COMMAND}" | awk '{print $2}')
+fi
 
 if [[ ${NUMBER_OF_ARG} -lt 2 ]]; then
     usage
