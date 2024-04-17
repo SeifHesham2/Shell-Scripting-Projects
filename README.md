@@ -59,3 +59,9 @@ This repository contains various shell scripting projects that automate tasks or
 - `-n`: Dry run mode. Display the COMMAND that would have been executed and exit.
 - `-s`: Execute the COMMAND using sudo on the remote server.
 - `-v`: Verbose mode. Displays the server name before executing COMMAND.
+
+### 8. Task_Scheduler.sh
+
+**Description:** This script allows scheduling tasks using cron. It takes a schedule and a command as arguments and adds the task to the crontab.
+
+**Usage:** `./Task_Scheduler.sh 'schedule' 'command'`
