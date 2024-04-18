@@ -78,9 +78,6 @@ This repository contains various shell scripting projects that automate tasks or
 1. Clone this repository to your server.
 2. Ensure the script has executable permissions: `chmod +x server_health_monitor.sh`.
 
-**Usage:**
-Run the script using sudo privileges: `sudo ./server_health_monitor.sh`.
-
 **Configuration:**
 - Set thresholds for CPU and memory usage in the script.
 - Provide your email address and password in the script for sending alerts.
@@ -96,3 +93,6 @@ Run the script using sudo privileges: `sudo ./server_health_monitor.sh`.
 
 ### Note
 Make sure to replace `"path/to/python.py"` with the actual path to the Python script for sending emails.
+
+**Usage:**
+Run the script using sudo privileges: `sudo ./server_health_monitor.sh`.
