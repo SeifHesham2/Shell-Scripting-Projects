@@ -66,36 +66,33 @@ This repository contains various shell scripting projects that automate tasks or
 
 **Usage:** `./Task_Scheduler.sh 'schedule' 'command'`
 
+### 9. Server Health Monitoring Script
 
-### 8. usage.sh
-# Server Health Monitoring Script
+**Description:** This script monitors the CPU and memory usage of your server and sends email alerts if certain thresholds are exceeded.
 
-## Introduction
-This script monitors the CPU and memory usage of your server and sends email alerts if certain thresholds are exceeded.
-
-## Prerequisites
+**Prerequisites:**
 - This script requires `mpstat` for CPU monitoring and `free` for memory monitoring.
 - You need to have Python 3 installed on your system.
 
-## Installation
+**Installation:**
 1. Clone this repository to your server.
 2. Ensure the script has executable permissions: `chmod +x server_health_monitor.sh`.
 
-## Configuration
+**Usage:**
+Run the script using sudo privileges: `sudo ./server_health_monitor.sh`.
+
+**Configuration:**
 - Set thresholds for CPU and memory usage in the script.
 - Provide your email address and password in the script for sending alerts.
 - Ensure that the path to the Python script for sending emails is correct.
 
-## Alerts
+**Alerts:**
 - If CPU usage exceeds the threshold, an alert email will be sent.
 - If memory usage exceeds the threshold, an alert email will be sent.
 
-## Additional Information
+**Additional Information:**
 - The script logs CPU and memory usage to `/var/log/server_health.log`.
 - A Python script for sending email alerts is included in the `scripts` folder.
 
 ### Note
 Make sure to replace `"path/to/python.py"` with the actual path to the Python script for sending emails.
-
-## Usage
-Run the script using sudo privileges: `sudo ./server_health_monitor.sh`.
