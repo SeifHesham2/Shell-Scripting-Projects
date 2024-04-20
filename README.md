@@ -91,8 +91,23 @@ This repository contains various shell scripting projects that automate tasks or
 - The script logs CPU and memory usage to `/var/log/server_health.log`.
 - A Python script for sending email alerts is included in the `scripts` folder.
 
-### Note
+### 10. Website Status Checker
+
+**Description:** This script checks the status of websites listed in a specified file. It sends an email alert if a website is down.
+
+**Usage:** `./website_status_checker.sh <filename>`
+
+**Prerequisites:**
+- The script requires `curl` for checking website status.
+- You need to have Python 3 installed on your system.
+
+**Configuration:**
+- Set the email address and password in the script for sending alerts.
+- Provide the correct path to the Python script for sending emails.
+
+**Alerts:**
+- If a website is down, an alert email will be sent.
+
+**Note:**  
 Make sure to replace `"path/to/python.py"` with the actual path to the Python script for sending emails.
 
-**Usage:**
-Run the script using sudo privileges: `sudo ./server_health_monitor.sh`.
